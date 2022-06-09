@@ -2,13 +2,6 @@
  * 约定常量
  */
 
-// ID限定字符
-export const ID_CHAR_SET = {
-    number: '0123456789',
-    letter: 'abcdefghijklmnopqrstuvwxyz',
-    special: '~`!@#$%^&*()-_+=[]{};:"\',<.>/?',
-};
-
 // 转义符号列表
 export const HTML_ESCAPES = {
     '&': '&amp;',
@@ -29,17 +22,11 @@ export const HTML_UNESCAPES = {
     '&#96;': '`',
 };
 
-/**
- * 时间常量
- */
-// 时间-一天的毫秒数：86400000 = 1000 * 60 * 60 * 24
-export const DAY_TIME = 864e5;
-// 时间-一天的毫秒数减一
-export const DAY_TIME_1 = 86399999;
+/** 数字转化为大写金额 */
+export const fraction = ['角', '分'];
+export const digit = ['零', '壹', '贰', '叁', '肆', '伍', '陆', '柒', '捌', '玖'];
+export const unit = [['元', '万', '亿'], ['', '拾', '佰', '仟']];
 
-/**
- * 常用正则
- */
 // 正则-手机号码
 export const RE_PHONE = /^(\+?0?86-?)?1[3456789]\d{9}$/;
 
